@@ -352,6 +352,7 @@ where
             }
         }
         println!("value {:?}", value);
+        println!("value {}", value.contains('\n'));
         let style = if value.contains('\n') {
             ScalarStyle::Literal
         } else {
