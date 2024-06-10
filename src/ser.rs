@@ -351,7 +351,7 @@ where
                 Ok(ScalarStyle::SingleQuoted)
             }
         }
-
+        println!("value {:?}", value);
         let style = if value.contains('\n') {
             ScalarStyle::Literal
         } else {
